@@ -536,7 +536,7 @@ img{
 /*========== SKILLS ==========*/
 .skills__content ul{
   display: flex;
-  justify-content: start;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -620,6 +620,20 @@ img{
   }
 }
 
+@media screen and (min-width: 560px) and (max-width: 967px){
+  .home__address{
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  .social__container{
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+}
+
 /* Classes modified for large screen size */
 @media screen and (min-width: 968px){
   body{
@@ -672,6 +686,10 @@ img{
   .interests__container{
     grid-template-columns: repeat(auto-fill, max-content);
     column-gap: 3.5rem;
+  }
+
+  .skills__content ul{
+    justify-content: start;
   }
 
 }
